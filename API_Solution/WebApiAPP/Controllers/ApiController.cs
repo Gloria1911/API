@@ -8,16 +8,53 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApiAPP.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/ [action]")]
     public class ApiController : Controller
     {
         // GET: api/<controller>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public double GetSum (int a,int b)
         {
-            return new string[] { "value1", "value2" };
+            return a + b;
         }
+        [HttpGet]
+        public double GetProduct(int a, int b)
+        {
+            return a * b;
+        }
+        [HttpGet]
+        public double GetSubtraction(int a, int b)
+        {
+            return a - b;
+        }
+        [HttpGet]
+        public double GetDiv(int a, int b)
+        {
+            return a / b;
+        }
+        [HttpGet]
+        public double GetResto(int a, int b)
+        {
+            return a % b;
 
+        }
+        [HttpGet]
+        public double GetDIvVirgola(double a, double b)
+        {
+            return (double)a + (double) b;
+        }
+        [HttpGet]
+        public double GetAverage(double a, double b)
+        {
+            double[] numeri = new double[] { a, b };
+            double media = numeri[0];
+            double somma = 0;
+            for (int i=0;i<numeri.Length;i++)
+            {
+                somma += numeri[i];
+            }
+            return media = somma / numeri.Length;
+        }
         // GET api/<controller>/5
         [HttpGet("{id}")]
         public string Get(int id)
