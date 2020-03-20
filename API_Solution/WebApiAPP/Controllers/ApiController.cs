@@ -31,6 +31,16 @@ namespace WebApiAPP.Controllers
         public double GetDiv(int a, int b)
         {
             return a / b;
+
+            try
+            {
+                Console.WriteLine(a / b);
+            }
+            catch (DivideByZeroException)
+            {
+                
+
+            }
         }
         [HttpGet]
         public double GetResto(int a, int b)
@@ -60,6 +70,7 @@ namespace WebApiAPP.Controllers
         public string Get(int id)
         {
             return "value";
+
         }
 
         // POST api/<controller>
