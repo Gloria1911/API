@@ -15,7 +15,7 @@
 
         <Grid Margin="30,30,30,60" BackgroundColor="Aquamarine">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.8*" />
+                <ColumnDefinition Width="0.8" />
                 <ColumnDefinition Width="0.8*" />
                 <ColumnDefinition Width="0.8*" />
               
