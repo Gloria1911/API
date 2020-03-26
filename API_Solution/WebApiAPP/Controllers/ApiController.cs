@@ -28,7 +28,7 @@ namespace WebApiAPP.Controllers
             return a - b;
         }
         [HttpGet]
-        public double GetDiv(int a, int b)
+        public double GetDiv(double a, double b)
         {
 
             if (b == 0)

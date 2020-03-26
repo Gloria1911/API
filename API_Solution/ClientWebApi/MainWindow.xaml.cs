@@ -78,7 +78,7 @@ namespace ClientWebApi
             string uri = $"https://localhost:44396/api/Api/GetDiv?a={a}&b={b}";
             HttpResponseMessage response = await client.GetAsync(uri);
             string content = await response.Content.ReadAsStringAsync();
-            ris = JsonConvert.DeserializeObject<int>(content);
+            ris = JsonConvert.DeserializeObject<double>(content);
             Dispatcher.Invoke(() => lblris.Content = ris);
         }
 

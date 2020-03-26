@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:ClientWebApi"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid HorizontalAlignment="Left" Width="800">
-        <Button  x:Name="btnGetSum" Content="+" HorizontalAlignment="Left" Margin="444,187,0,0" VerticalAlignment="Top" Width="63" Height="20" RenderTransformOrigin="0.5,0.5" Click="btnGetSum_Click">
+
+    <Grid HorizontalAlignment="Left" Width="800" Background="silver">
+
+        <Button  x:Name="btnGetSum" Content="+" HorizontalAlignment="Left" Margin="444,187,0,0" VerticalAlignment="Top" Width="63" Height="20" RenderTransformOrigin="0.5,0.5" Click="btnGetSum_Click" FontWeight="Normal" FontStyle="Normal" BorderBrush="#FFB44444" Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="1"/>
@@ -23,12 +25,12 @@
         <Label x:Name="lbln2"  Content="Inserisci il 2° numero" HorizontalAlignment="Left" Margin="232,118,0,0" VerticalAlignment="Top" FontStyle="Italic" FontFamily="Courier New" />
         <Label x:Name="lblop"  Content="Il risultato dell'operazione scelta è:" HorizontalAlignment="Left" Margin="44,321,0,0" VerticalAlignment="Top" FontStyle="Italic" FontFamily="Courier New"/>
         <Label x:Name="lblris" Content="" HorizontalAlignment="Left" Margin="342,309,0,0" VerticalAlignment="Top" Width="176" Height="47" FontSize="30"/>
-        <Button x:Name="btnGetProduct" Content="*" HorizontalAlignment="Left" Margin="444,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,0.181" Width="63" Height="20" Click="btnGetProduct_Click"/>
-        <Button x:Name="btnGetSubtraction" Content="-" HorizontalAlignment="Left" Margin="444,237,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.497,-0.232" Click="btnGetSubtraction_Click" />
-        <Button x:Name="btnGetDiv" Content="/" HorizontalAlignment="Left" Height="18" Margin="444,262,0,0" VerticalAlignment="Top" Width="63" Click="btnGetDiv_Click"/>
-        <Button x:Name="btnGetResto" Content="Rest" HorizontalAlignment="Left" Margin="537,187,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.246,-4.257" Width="61" Click="btnGetResto_Click" />
+        <Button x:Name="btnGetProduct" Content="*" HorizontalAlignment="Left" Margin="444,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.433,0.181" Width="63" Height="20" Click="btnGetProduct_Click" Background="White" Visibility="Visible" Opacity="1" BorderBrush="#FFB44444"/>
+        <Button x:Name="btnGetSubtraction" Content="-" HorizontalAlignment="Left" Margin="444,237,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.497,-0.232" Click="btnGetSubtraction_Click" BorderBrush="#FFB44444" Background="White" />
+        <Button x:Name="btnGetDiv" Content="/" HorizontalAlignment="Left" Height="18" Margin="444,262,0,0" VerticalAlignment="Top" Width="63" Click="btnGetDiv_Click" Background="White" BorderBrush="#FFB44444"/>
+        <Button x:Name="btnGetResto" Content="Rest" HorizontalAlignment="Left" Margin="537,187,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.246,-4.257" Width="61" Click="btnGetResto_Click" Background="White" BorderBrush="#FFB44444" />
 
-        <Button x:Name="btnGetAverage" Content="Average" HorizontalAlignment="Left" Margin="537,212,0,0" VerticalAlignment="Top" Click="btnGetAverage_Click" Width="61"/>
+        <Button x:Name="btnGetAverage" Content="Average" HorizontalAlignment="Left" Margin="537,212,0,0" VerticalAlignment="Top" Click="btnGetAverage_Click" Width="61" BorderBrush="#FFB44444" Background="White"/>
 
 
     </Grid>
