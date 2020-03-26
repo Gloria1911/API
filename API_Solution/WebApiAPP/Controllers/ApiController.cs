@@ -13,7 +13,7 @@ namespace WebApiAPP.Controllers
     {
         // GET: api/<controller>
         [HttpGet]
-        public double GetSum (int a,int b)
+        public double GetSum(int a, int b)
         {
             return a + b;
         }
@@ -30,30 +30,26 @@ namespace WebApiAPP.Controllers
         [HttpGet]
         public double GetDiv(int a, int b)
         {
-            return a / b;
-
-            try
+            if (b == 0)
             {
-                Console.WriteLine(a / b);
+               
+                throw new System.DivideByZeroException();
             }
-            catch (DivideByZeroException)
+            else
+
             {
+                return a / b;
 
-                
-
-            }
         }
+    }
+
         [HttpGet]
         public double GetResto(int a, int b)
         {
             return a % b;
 
         }
-        [HttpGet]
-        public double GetDIvVirgola(double a, double b)
-        {
-            return (double)a + (double) b;
-        }
+       
         [HttpGet]
         public double GetAverage(double a, double b)
         {
