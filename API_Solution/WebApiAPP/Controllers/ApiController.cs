@@ -15,7 +15,7 @@ namespace WebApiAPP.Controllers
         [HttpGet]
         public double GetSum(int a, int b)
         {
-            return a + b;
+            return a+b;
         }
         [HttpGet]
         public double GetProduct(int a, int b)
@@ -30,6 +30,7 @@ namespace WebApiAPP.Controllers
         [HttpGet]
         public double GetDiv(int a, int b)
         {
+
             if (b == 0)
             {
                
