@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApiAPP.Controllers
 {
-    [Route("api/[controller]/ [action]")]
+    [Route("api/[controller]/[action]")]
     public class ApiController : Controller
     {
         // GET: api/<controller>
