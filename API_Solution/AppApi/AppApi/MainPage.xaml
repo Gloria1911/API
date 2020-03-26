@@ -6,11 +6,71 @@
              mc:Ignorable="d"
              x:Class="AppApi.MainPage">
 
-    <StackLayout>
+    
+     <StackLayout BackgroundColor="MediumAquamarine">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Label Text="OPERATIONS" FontAttributes="Bold" FontSize="30"
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+           VerticalOptions="CenterAndExpand"/>
 
+        <Grid Margin="30,30,30,60" BackgroundColor="Aquamarine">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.8*" />
+                <ColumnDefinition Width="0.8*" />
+                <ColumnDefinition Width="0.8*" />
+              
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                
+            </Grid.RowDefinitions>
+            <Entry x:Name="num1"
+               Grid.Column="0"
+                   Grid.Row="0"
+               Text="Num1" />
+            <Entry x:Name="num2"
+               Grid.ColumnSpan="1"
+                   Grid.Row="1"
+               Text="Num2" />
+            <Entry x:Name="Risultato"
+               Grid.Column="3"
+                   Grid.Row="0"
+               Text="Risultato" />
+            <Button Grid.ColumnSpan="2"
+                Grid.Row="2"
+                Text="Sum"
+                Clicked="OnButtonClicked" />
+            <Button Grid.ColumnSpan="2"
+                Grid.Row="3"
+                Text="Subtraction"
+                Clicked="OnButtonClicked" />
+            <Button Grid.ColumnSpan="2"
+                Grid.Row="4"
+                Text="Product"
+                Clicked="OnButtonClicked" />
+            <Button Grid.ColumnSpan="2"
+                Grid.Row="5"
+                Text="Div"
+                Clicked="OnButtonClicked" />
+            <Button Grid.ColumnSpan="2"
+                Grid.Row="6"
+                Text="Rest"
+                Clicked="OnButtonClicked" />
+            <Button Grid.ColumnSpan="2"
+                Grid.Row="7"
+                Text="Average"
+                Clicked="OnButtonClicked" />
+            
+            
+        </Grid>
+
+    </StackLayout>
 </ContentPage>
