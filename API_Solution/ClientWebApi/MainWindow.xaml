@@ -1,0 +1,29 @@
+﻿<Window x:Class="ClientWebApi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientWebApi"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid HorizontalAlignment="Left" Width="800">
+        <Button  x:Name="btnGetSum" Content="Sum" HorizontalAlignment="Left" Margin="444,187,0,0" VerticalAlignment="Top" Width="63" Height="20" RenderTransformOrigin="0.5,0.5" Click="btnGetSum_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="txtas" HorizontalAlignment="Left" Margin="243,79,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtbs"  HorizontalAlignment="Left" Margin="244,147,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbln1" Content=" Inserisci il 1° numero " HorizontalAlignment="Left" Margin="235,48,0,0" VerticalAlignment="Top" Width="158"/>
+        <Label x:Name="lbln2"  Content="Inserisci il 2° numero" HorizontalAlignment="Left" Margin="244,116,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblop"  Content="Il risultato dell'operazione scelta è:" HorizontalAlignment="Left" Margin="48,311,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblris" Content="" HorizontalAlignment="Left" Margin="257,311,0,0" VerticalAlignment="Top" Width="67"/>
+
+
+    </Grid>
+</Window>
