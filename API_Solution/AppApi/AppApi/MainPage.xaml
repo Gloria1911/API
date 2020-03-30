@@ -33,11 +33,11 @@
                 
             </Grid.RowDefinitions>
             <Entry x:Name="num1"
-               Grid.Column="0"
+               Grid.Column="1"
                    Grid.Row="0"
                Text="Num1" />
             <Entry x:Name="num2"
-               Grid.ColumnSpan="1"
+               Grid.Column="1"
                    Grid.Row="1"
                Text="Num2" />
             <Entry x:Name="Risultato"
