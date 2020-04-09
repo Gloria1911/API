@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SQLite;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,6 +13,22 @@ namespace WebApiAPP.Controllers
     public class ApiController : Controller
     {
         // GET: api/<controller>
+        [HttpGet]
+        public string GetStudents(int IdStudents)
+        {
+            var file = "Database.db3";
+            var con = new SQLiteConnection(file);
+
+            Students s = con.Table<Students>().Where(c => c.ID == IdStudents).First();
+            return  $"{s.Name} {s.Surname }";
+        }
+        [HttpGet("{id}")]
+
+        public string Getid(int id)
+        {
+          return  "value";
+        }
+                
         [HttpGet]
         public double GetSum(int a, int b)
         {

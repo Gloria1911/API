@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppApi.Android", "AppApi\Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppApi.iOS", "AppApi\AppApi.iOS\AppApi.iOS.csproj", "{6D2C2B4E-CD71-45EB-A1D5-8E9354A546E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppApi", "AppApi\AppApi\AppApi.csproj", "{5C1D4970-C364-4772-AC9F-A11D710BAB26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppApi", "AppApi\AppApi\AppApi.csproj", "{5C1D4970-C364-4772-AC9F-A11D710BAB26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
